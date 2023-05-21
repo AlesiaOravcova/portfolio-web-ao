@@ -8,4 +8,12 @@ Text Color (Dark Purple): #332747
 Background Color: #FEFEF9
 */
 
-body {background-color: #FEFEF9;}
+body {
+    background-color: #FEFEF9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #332747;
+
+}
