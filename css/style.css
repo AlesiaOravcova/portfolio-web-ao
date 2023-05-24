@@ -1,45 +1,168 @@
 
-/* 
-Colors Used:
-Primary Color (Green): #3B6567
-Secondary Color (Green): #89C09E
-Accent Color (Orange): #DD8F1B
+/* Colors Used:
+Primary Color (Green-Dark): #3b6567
+Secondary Color (Green-Light): #89c09e
+Accent Color (Orange): #dd8f1b
 Text Color (Dark Purple): #332747
-Background Color: #FEFEF9
+Text Color on Light Green: #391137
+Background Color: ##fefef9
 */
 
 body {
-    background-color: #FEFEF9;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #332747;
-
+  background-color: #fefef9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #332747;
 }
 
-h1, h2, h3, h4, h5 {
-    margin: 3rem 0 1.38rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    line-height: 1.3;
+header ul,
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.052rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.953rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.563rem;
+}
+
+h6 {
+  font-size: 1.563rem;
+  font-weight: 700;
+}
+
+/* img {
+  width: 100%;
+}
+*/
+
+/* Links and buttons */
+
+a {
+  color: #3b6567;
+  text-decoration: none;
+}
+
+/*
+a:visited {
+  color: #3B6567;
+  text-decoration: none;
+} */
+
+a:hover,
+a:focus {
+  color: #3b6567;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #89c09e;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: #89c09e;
+  padding: 16px 24px 15px;
+  color: #332747;
+  border-radius: 16px;
+}
+
+.button:hover,
+.button:focus {
+  border: 1px solid #3b6567;
+  color: #332747;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #fefef9;
+}
+
+.secondary-button {
+  background-color: #fefef9;
+  border: 1px solid #3b6567;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  background-color: #89c09e44;
+}
+
+.secondary-button:active {
+  color: #fefef9;
+}
+
+/* layout */
+
+.container {
+  padding: 0 15px;
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* header */
+
+header {
+  background-color: #fefef9;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+header nav {
+  float: right;
+  margin-top: 14px;
+}
+
+/* main */
+
+main {
+  margin-top: 100px;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 0;
   }
+}
 
-  h1 {font-size: 3.052rem;
-    font-weight: 100;
-    }
-  
-  h2 {font-size: 3.052rem;}
-
-  h3 {font-size: 1.953rem;
-    }
-
-  h4 {font-size: 1.953rem;
-    font-weight: 700;
-    }
-  
-  h5 {font-size: 1.563rem;}
-  
-  h6 {font-size: 1.563rem;
-    font-weight: 700;
-    }
