@@ -8,6 +8,10 @@ Text Color on Light Green: #391137
 Background Color: ##fefef9
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fefef9;
   font-family: 'Montserrat', sans-serif;
@@ -62,10 +66,10 @@ h6 {
   font-weight: 700;
 }
 
-/* img {
+img {
   width: 100%;
 }
-*/
+
 
 /* Links and buttons */
 
@@ -94,6 +98,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #89c09e;
+  border: 1px solid transparent;
   padding: 16px 24px 15px;
   color: #332747;
   border-radius: 16px;
@@ -127,10 +132,19 @@ a:active {
 /* layout */
 
 .container {
-  padding: 0 15px;
+  padding: 0 24px;
   display: block;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.row {
+  margin: 24px 0;
+}
+
+#work .row {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #89c09e;
 }
 
 /* header */
@@ -154,10 +168,14 @@ header nav {
   margin-top: 14px;
 }
 
+header img {
+  max-width: 250px;
+}
+
 /* main */
 
 main {
-  margin-top: 100px;
+  margin-top: 115px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -166,3 +184,27 @@ main {
   }
 }
 
+/* footer icons */
+svg {
+  width: 59px;
+  height: 59px;
+}
+
+/* Hero */
+
+#hero {
+  background-color: #3b6567;
+  color: #fefef9;
+  padding: 16px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1, h3 {
+  margin: 32px 0;
+}
+
+#hero picture {
+  display: inline;
+  width: 100%;
+}
