@@ -12,6 +12,10 @@ Background Color: ##fefef9
   box-sizing: border-box;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
   background-color: #fefef9;
   font-family: 'Montserrat', sans-serif;
@@ -202,18 +206,6 @@ main {
   margin-top: 115px;
 }
 
-@media only screen and (min-width: 640px) {
-  .container {
-    padding: 0;
-  }
-}
-
-/* footer icons */
-svg {
-  width: 59px;
-  height: 59px;
-}
-
 /* Hero */
 
 #hero {
@@ -228,4 +220,15 @@ svg {
   margin: 32px 0;
 }
 
+/* Footer */
+footer svg {
+  width: 59px;
+  height: 59px;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 0;
+  }
+}
 
