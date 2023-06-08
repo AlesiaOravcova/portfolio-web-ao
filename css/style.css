@@ -242,7 +242,7 @@ footer h2 {
 /* main */
 
 main {
-  margin-top: 115px;
+  margin-top: 80px;
 }
 
 /* Hero */
@@ -283,16 +283,63 @@ h3 {
 
 /* ABOUT PAGE */
 
+#about {
+  display: inline-block;
+  width: 100%;
+}
+
+#about .row {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+/* Changing order - About me, Img and Text. Why it doesn't work?
+#about {
+    display: flexbox;
+    align-items: center;
+  }
+
+  #about .text-about-me {
+    order: 2;
+  }
+
+  #about .portf-photo {
+    order: 1;
+  }
+*/
+
 /* Skills and Tools section */
 
-.col-skills {
-  background-color: #3b6567;
-  padding: 40px 0;
+.tab-skills-tools {
+  display: grid;
 }
 
-.col-tools {
-  background-color: #89c09e;
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+  background-color: #3b6567;
+  color: #fefef9;
+  padding: 0 24px;
+  max-width: ;
 }
+
+.item-5,
+.item-6 {
+  background-color: #89c09e;
+  padding: 0 24px;
+}
+
+.item-1 h3 {
+  border-bottom: 1px solid #89c09e;
+  max-width: fit-content;
+}
+
+.item-5 h3 {
+  border-bottom: 1px solid #332747;
+  max-width: fit-content;
+}
+
 
 /* Review section */
 .review-1,
@@ -329,6 +376,36 @@ h3 {
     width: fit-content;
   }
 
+  .item-1 {
+    grid-column: 1 / 10;
+    grid-row: 1;
+  }
+
+  .item-2 {
+    grid-column: 1 / 10;
+    grid-row: 2;
+  }
+
+  .item-3 {
+    grid-column: 1 / 10;
+    grid-row: 3;
+  }
+
+  .item-4 {
+    grid-column: 1 / 10;
+    grid-row: 4;
+  }
+  
+  .item-5 {
+    grid-column: 10 / 13;
+    grid-row: 1;
+  }
+  
+  .item-6 {
+    grid-column: 10 / 13;
+    grid-row: 2 / 5;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -347,6 +424,40 @@ h3 {
   .col-lg-4 {
     width: 30%;
   }
+
+  .item-1 {
+    grid-column: 1 / 13;
+    grid-row: 1;
+  }
+
+  .item-2 {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    min-width: 3fr;
+  }
+
+  .item-3 {
+    grid-column: 4 / 7;
+    grid-row: 2;
+    min-width: 3fr;
+  }
+
+  .item-4 {
+    grid-column: 7 / 10;
+    grid-row: 2;
+    min-width: 3fr;
+  }
+  
+  .item-5 {
+    grid-column: 10 / 13;
+    grid-row: 1;
+  }
+  
+  .item-6 {
+    grid-column: 10 / 13;
+    grid-row: 2 / 5;
+  }
+
 }
 
 @media only screen and (min-width: 1440px) {
